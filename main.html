@@ -1,1 +1,204 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Personal Profile Page</title>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+
+  <style>
+    * {
+      box-sizing: border-box;
+      font-family: Arial, sans-serif;
+    }
+
+    body {
+      background: #f4f6f8;
+      margin: 0;
+      padding: 20px;
+      color: #333;
+    }
+
+    .container {
+      max-width: 900px;
+      margin: auto;
+      background: white;
+      padding: 25px;
+      border-radius: 10px;
+      box-shadow: 0 5px 15px rgba(0,0,0,0.1);
+    }
+
+    header {
+      display: flex;
+      align-items: center;
+      gap: 20px;
+      margin-bottom: 30px;
+    }
+
+    header img {
+      width: 140px;
+      height: 140px;
+      border-radius: 50%;
+      border: 4px solid #2196f3;
+      object-fit: cover;
+    }
+
+    header h1 {
+      margin: 0;
+      font-size: 28px;
+      color: #2196f3;
+    }
+
+    section {
+      margin-bottom: 25px;
+    }
+
+    section h2 {
+      border-bottom: 2px solid #2196f3;
+      padding-bottom: 5px;
+      margin-bottom: 10px;
+      color: #222;
+    }
+
+    .info {
+      font-size: 16px;
+      margin-left: 10px;
+    }
+
+    .skills {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+      gap: 20px;
+    }
+
+    .skill {
+      background: #f9f9f9;
+      padding: 15px;
+      border-radius: 8px;
+    }
+
+    .skill i {
+      font-size: 22px;
+      color: #2196f3;
+    }
+
+    .skill-name {
+      font-weight: bold;
+      margin: 8px 0;
+    }
+
+    .progress {
+      background: #ddd;
+      border-radius: 20px;
+      overflow: hidden;
+      height: 20px;
+    }
+
+    .progress-bar {
+      height: 100%;
+      text-align: right;
+      padding-right: 5px;
+      color: white;
+      font-size: 13px;
+      line-height: 20px;
+      background: #2196f3;
+    }
+
+    footer {
+      text-align: center;
+      margin-top: 30px;
+      color: #777;
+      font-size: 14px;
+    }
+  </style>
+</head>
+<body>
+
+  <div class="container">
+
+    <!-- PROFILE HEADER -->
+    <header>
+      <img src="https://via.placeholder.com/150" alt="Profile Picture">
+      <div>
+        <h1>Personal Profile</h1>
+        <p>A graphical resume showcasing skills & strengths</p>
+      </div>
+    </header>
+
+    <!-- NAME -->
+    <section>
+      <h2>Name</h2>
+      <p class="info">Prince Gupta</p>
+    </section>
+
+    <!-- EMAIL -->
+    <section>
+      <h2>Email</h2>
+      <p class="info">princegupta@example.com</p>
+    </section>
+
+    <!-- PROFILE -->
+    <section>
+      <h2>Profile</h2>
+      <p class="info">Front-End Web Developer</p>
+    </section>
+
+    <!-- ABOUT ME -->
+    <section>
+      <h2>About me</h2>
+      <p class="info">
+        I am a passionate and detail-oriented web developer with strong fundamentals
+        in HTML, CSS, and JavaScript. I enjoy building user-friendly interfaces and
+        continuously improving my technical skills.
+      </p>
+    </section>
+
+    <!-- SKILLS -->
+    <section>
+      <h2>Skills</h2>
+
+      <div class="skills">
+
+        <div class="skill">
+          <i class="fa-brands fa-html5"></i>
+          <div class="skill-name">HTML</div>
+          <div class="progress">
+            <div class="progress-bar" style="width: 90%;">90%</div>
+          </div>
+        </div>
+
+        <div class="skill">
+          <i class="fa-brands fa-css3-alt"></i>
+          <div class="skill-name">CSS</div>
+          <div class="progress">
+            <div class="progress-bar" style="width: 85%;">85%</div>
+          </div>
+        </div>
+
+        <div class="skill">
+          <i class="fa-brands fa-js"></i>
+          <div class="skill-name">JavaScript</div>
+          <div class="progress">
+            <div class="progress-bar" style="width: 75%;">75%</div>
+          </div>
+        </div>
+
+        <div class="skill">
+          <i class="fa-brands fa-git-alt"></i>
+          <div class="skill-name">Git & GitHub</div>
+          <div class="progress">
+            <div class="progress-bar" style="width: 70%;">70%</div>
+          </div>
+        </div>
+
+      </div>
+    </section>
+
+    <footer>
+      © 2025 Personal Profile Page
+    </footer>
+
+  </div>
+
+</body>
+</html>
 
